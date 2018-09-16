@@ -90,13 +90,13 @@ plt.ylabel(("Attribute Values"))
 plt.show()
 
 #calculate correlations between real-valued attributes
-dataRow2 = data.iloc[1,0:60]
-dataRow3 = data.iloc[2,0:60]
+dataRow2 = data.iloc[:,1]
+dataRow3 = data.iloc[:,2]
 plt.scatter(dataRow2, dataRow3)
 plt.xlabel("2nd Attribute")
 plt.ylabel(("3rd Attribute"))
 plt.show()
-dataRow21 = data.iloc[20,0:60]
+dataRow21 = data.iloc[:,20]
 plt.scatter(dataRow2, dataRow21)
 plt.xlabel("2nd Attribute")
 plt.ylabel(("21st Attribute"))
